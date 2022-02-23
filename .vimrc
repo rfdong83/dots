@@ -8,13 +8,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'ervandew/supertab'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'flazz/vim-colorschemes'
+Plugin 'joshdick/onedark.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -55,10 +53,12 @@ set cursorline
 
 " no wrapping
 set tw=0
+"
 
 " syntax highlighting
 syntax enable
-colorscheme lucid
+set background=dark
+colorscheme onedark
 set term=screen-256color
 
 " airline setup
@@ -70,10 +70,4 @@ map / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map ? <Plug>(easymotion-sn)
 omap ? <Plug>(easymotion-tn)
-
-" java settings
-autocmd FileType java setlocal shiftwidth=4 softtabstop=4 expandtab
-
-" python settings
-autocmd FileType python setlocal shiftwidth=4 softtabstop=4 expandtab
 
