@@ -53,6 +53,9 @@ fi
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
 
+# Add Android Tools
+export PATH='/Users/ryandong/Library/Android/sdk/platform-tools/':$PATH
+
 # Aliases
 alias gs='git status'
 alias gc='git commit'
@@ -63,8 +66,5 @@ alias hgs='hg status'
 alias hgc='hc commit'
 alias hga='hg ammend'
 
-# added by setup_fb4a.sh
-export ANDROID_SDK=/opt/android_sdk
-export ANDROID_NDK_REPOSITORY=/opt/android_ndk
-export ANDROID_HOME=${ANDROID_SDK}
-export PATH=${PATH}:${ANDROID_SDK}/emulator:${ANDROID_SDK}/tools:${ANDROID_SDK}/tools/bin:${ANDROID_SDK}/platform-tools
+alias ars='cd ~/fbsource/arvr/apps/ArShell'
+
